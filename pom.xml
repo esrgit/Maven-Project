@@ -15,6 +15,7 @@
       (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
     -->
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-compiler-plugin.version>3.0</maven-compiler-plugin.version>
   </properties>
 
   <repositories>
@@ -95,6 +96,8 @@
           <url>http://localhost:8080/manager</url>
         </configuration>
       </plugin>
+      <artifactId>maven-compiler-plugin</artifactId>
+    <version>${maven-compiler-plugin.version}</version>
     </plugins>
   </build>
 
